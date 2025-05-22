@@ -1,0 +1,97 @@
+$ npm create vite@latest
+|
+o  Project name:
+|  uptask_frontend
+|
+o  Select a framework:
+|  React
+|
+o  Select a variant:
+|  TypeScript + SWC
+|
+o  Scaffolding project in C:\Users\thinkpad\Desktop\React\React JP\uptask_fronte
+nd...
+|
+—  Done. Now run:
+
+  cd uptask_frontend
+  npm install
+  npm run dev
+
+
+Tailwind
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+
+tailwind.config
+    content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+
+    index.css
+
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+react-router-dom
+npm i react-router-dom
+
+@
+npm i -D @types/node
+  vite.config
+
+    import { fileURLToPath, URL } from 'node:url'
+    resolve: {
+      alias: {
+        '@' : fileURLToPath(new URL('./src', import.meta.url))
+      }
+    }
+
+tsconfig.app.json
+  "baseUrl":"src",
+  "paths": {
+    "@/components/*" : ["components/*"],
+    "@/views/*" : ["views/*"],
+    "@/layouts/*" : ["layouts/*"],
+    "@/api/*" : ["api/*"],
+    "@/types/*" : ["types/*"],
+    "@/lib/*" : ["lib/*"],
+    "@/utils/*" : ["utils/*"],
+    "@/locales/*" : ["locales/*"],
+  },
+
+npm i @headlessui/react @heroicons/react
+
+npm i react-hook-form
+
+Zod
+npm i zod
+
+Axios
+npm i axios
+
+crear .env.local
+
+crear carpeta api(services)
+
+Notificaciones
+  npm i react-toastify
+
+    import { ToastContainer } from 'react-toastify' en AppLayout.tsx
+    import 'react-toastify/dist/ReactToastify.css'
+
+React Query -> https://tanstack.com/query/latest/docs/framework/react/overview
+  npm i @tanstack/react-query
+    configuracion en main.tsx
+      import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+  npm i @tanstack/react-query-devtools
+    main.tsx
+    import { ReactQueryDevtools } from '@tanstack/react-query-devtools' 
+
+  crear carpeta utils/utils.ts
+
+  traducciones
+  locales/es.ts
