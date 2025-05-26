@@ -60,6 +60,7 @@ tsconfig.app.json
     "@/lib/*" : ["lib/*"],
     "@/utils/*" : ["utils/*"],
     "@/locales/*" : ["locales/*"],
+    "@/hooks/*" : ["hooks/*"],
   },
 
 npm i @headlessui/react @heroicons/react
@@ -95,3 +96,9 @@ React Query -> https://tanstack.com/query/latest/docs/framework/react/overview
 
   traducciones
   locales/es.ts
+
+
+https://www.npmjs.com/package/@chakra-ui/pin-input
+npm i @chakra-ui/pin-input
+
+crear hooks/useAuth.ts
