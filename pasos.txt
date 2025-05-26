@@ -102,3 +102,11 @@ https://www.npmjs.com/package/@chakra-ui/pin-input
 npm i @chakra-ui/pin-input
 
 crear hooks/useAuth.ts
+
+
+tema de tailwind
+npm i @tailwindcss/forms
+tailwind.config.js
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
