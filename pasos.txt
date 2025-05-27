@@ -110,3 +110,7 @@ tailwind.config.js
   plugins: [
     require('@tailwindcss/forms')
   ],
+
+Drag & Drop
+https://dndkit.com/
+npm install @dnd-kit/core
