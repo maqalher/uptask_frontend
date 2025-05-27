@@ -114,3 +114,5 @@ tailwind.config.js
 Drag & Drop
 https://dndkit.com/
 npm install @dnd-kit/core
+
+agregar vercel.json para la navegacion
